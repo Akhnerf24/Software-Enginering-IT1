@@ -35,7 +35,7 @@ print("Nama Hewannya adalah : " + animal)
 print("Nama Hewannya adalah :{}".format(animal))
 # contatenate int ke string
 print("Ini nilai a dari int ke str :" + str(a))
-print("Ini yg ga usah di convert : {}".format(a))
+print("Ini tidak perlu di convert : {}".format(a))
 print("Nama : {}, \nTempat Tinggal : {}, \nUmur :{}".format("Akhner", "Palembang", "19"))
 
 # contoh Array
