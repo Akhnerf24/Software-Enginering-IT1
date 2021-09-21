@@ -1,4 +1,3 @@
-# variable
 
 # integer
 a = 1
