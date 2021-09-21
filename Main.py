@@ -45,8 +45,8 @@ List_1 = ["David"] * 4
 print(List_1)
 print(NamaOrang[0:2]) #ini sebut array 0 dan 1
 print(NamaOrang[-1]) #ini panggil 1 dari yang belakang
-print(NamaOrang[-2:])#ini 2 terakhir
+print(NamaOrang[-2:])#ini 2 terbelakang
 
-#nambahkan ke array pake append
+#nambahkan ke array pakai append
 NamaOrang.append("hai")
 print(NamaOrang)
