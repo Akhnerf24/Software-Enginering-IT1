@@ -1,0 +1,96 @@
+
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "TugasAkner&Farischa.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PEe5Vnjxd46S",
+        "outputId": "239b6117-7915-4ee0-ba64-5ff777deb864"
+      },
+      "source": [
+        "'''Tugas kelompok Farischa Makay & Akhner Frischa : Mencari nilai terkecil dari\n",
+        "3 input user''' \n",
+        "\n",
+        "def switch():\n",
+        " \n",
+        "    option = int(input(\"Please choose number (1 or 2). 1 for Faricha coding and 2 for Akhner coding: \"))\n",
+        " \n",
+        " \n",
+        "    if option == 1:\n",
+        "        value1 = input((\"Please enter number 1 :\\n\"))\n",
+        "        value2 = input((\"Please enter number 2 :\\n\"))\n",
+        "        value3 = input((\"Please enter number 3 :\\n\"))\n",
+        "        \n",
+        "        \n",
+        "        if value1 < value2 and value1 < value3:\n",
+        "          print(f'{value1} is the lowest number')\n",
+        "        elif value2 < value1 and value2 < value3 :\n",
+        "          print(f'{value2} is the lowest number')\n",
+        "        elif value3 < value2 and value3 < value1 :\n",
+        "          print(f'{value3} is the lowest number')\n",
+        "        elif value1 == value2 and value1 != value3 :\n",
+        "          print(f'{value1} is the lowest number')\n",
+        "        elif value1 == value3 and value1 != value2 :\n",
+        "          print(f'{value1} is the lowest number')\n",
+        "        elif value2 == value3 and value2 != value1 :\n",
+        "          print(f'{value2} is the lowest number')\n",
+        "        else:\n",
+        "          print(\"Your numbers have same result.  Please change your number.\")\n",
+        "\n",
+        " \n",
+        "    elif option == 2:\n",
+        "        print(\"Program Menentukan Nilai Terkecil Dari 3 Angka\")\n",
+        "        data = []\n",
+        "        jum = 0\n",
+        "\n",
+        "        for i in range(3):\n",
+        "          temp = int(input(\"Masukkan Angka ke-%d: \" % (i+1)))\n",
+        "          data.append(temp)\n",
+        "          jum += data[i]\n",
+        "    \n",
+        "        print('Nilai Terkecil Sekarang Adalah :', min(data))\n",
+        " \n",
+        "    else:\n",
+        "        print(\"Incorrect option\")\n",
+        " \n",
+        " \n",
+        " \n",
+        "switch()\n",
+        " "
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please choose number (1 or 2). 1 for Faricha coding and 2 for Akhner coding: 2\n",
+            "Program Menentukan Nilai Terkecil Dari 3 Angka\n",
+            "Masukkan Angka ke-1: 3\n",
+            "Masukkan Angka ke-2: 2\n",
+            "Masukkan Angka ke-3: 5\n",
+            "Nilai Terkecil Sekarang Adalah : 2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
